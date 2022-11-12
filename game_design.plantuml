@@ -1,0 +1,41 @@
+@startuml Game Design 
+!define DARKRED
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+package main {
+
+    class director {
+        __init__()
+        start_game()
+        get_inputs()
+        do_updates()
+        do_outputs()
+
+    }
+
+    class card {
+        int points 
+        int card_value
+        draw_card()
+
+    }
+
+    card -> director
+
+    note top of card
+    This is the card class that will:
+    control the points
+    control the cards
+    end note
+
+    note bottom of director
+    This is where we will control the flow of the game.
+    end note
+
+}
+
+note top of main
+The main file will initilize the whole project. 
+end note
+
+@enduml
