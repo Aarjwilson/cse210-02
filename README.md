@@ -14,7 +14,7 @@ Hilo is played according to the following rules:
 - If a player has more than 0 points they decide if they want to keep playing.
 - If a player decides not to play again the game is over.
 
-***Authors: Aaron Wilson (aarjwilson@gmail.com)***
+***Authors: Aaron Wilson (aarjwilson@gmail.com)***<br>
 ***Software Needed: Python***
 
 The design file you may require you to use **plantuml** and **graphviz** to view it properly.
