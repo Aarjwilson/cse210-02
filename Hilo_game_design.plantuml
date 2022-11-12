@@ -8,6 +8,11 @@ package main {
         __init__()
         int score
         bool is_playing
+        string HiLo 
+        ---
+        current_card
+        next_card
+        ---
         start_game()
         get_inputs()
         do_updates()
