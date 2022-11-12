@@ -1,4 +1,4 @@
-@startuml Game Design 
+@startuml Hilo Game Design 
 !define DARKRED
 !includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
 
@@ -6,15 +6,17 @@ package main {
 
     class director {
         __init__()
+        int score
+        bool is_playing
         start_game()
         get_inputs()
         do_updates()
         do_outputs()
+        play_again()
 
     }
 
-    class card {
-        int points 
+    class card { 
         int card_value
         draw_card()
 
@@ -23,13 +25,17 @@ package main {
     card -> director
 
     note top of card
-    This is the card class that will:
-    control the points
-    control the cards
+    This is the card class that will provide default value for each card object.
+    >draw_card() will allow a random card to be drawn.
     end note
 
     note bottom of director
     This is where we will control the flow of the game.
+    >start_game() will handle the path
+    >get_inputs() gets the players guess of high or low
+    >do_updates() will update the score and determine if it is game over
+    >do_outputs() will display the results
+    >play_again() will give the option to continue the game or not
     end note
 
 }
