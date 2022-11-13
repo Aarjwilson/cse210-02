@@ -17,7 +17,7 @@ Hilo is played according to the following rules:
 ***Authors: Aaron Wilson (aarjwilson@gmail.com)***<br>
 ***Software Needed: Python***
 
-The design file may require you to use **"plantuml"** and **"graphviz"** to view it properly.
+The Hilo_game_design.plantuml may require you to use **"plantuml"** and **"graphviz"** to view it properly.
 
 #### Project Structure
 - The main.py file runs the game.
